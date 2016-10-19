@@ -6,11 +6,16 @@ post1 = {
     "title" : "Good day",
     "content": "I met a girl."
 }
-
-
+post2 = {
+    "title" : "Bad day",
+    "content":"Now, I am hungry."
+}
+print(post1["title"])
+print(post1["content"])
+posts = [post1, post2]
 @app.route('/')
 def hello_world():
-    return json.dumps(post1)
+    return json.dumps(posts)
 
 
 if __name__ == '__main__':
