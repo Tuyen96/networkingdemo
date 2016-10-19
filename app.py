@@ -15,7 +15,7 @@ print(post1["content"])
 posts = [post1, post2]
 
 @app.route('/')
-def hello_world():
+def main():
     return json.dumps(posts)
 
 @app.route('/addpost', methods= ["POST"])
